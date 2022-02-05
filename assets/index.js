@@ -31,7 +31,7 @@ http
       res.writeHead(200, { "Content-Type": "application/pdf" });
       fs.readFile("pdf/perpustakaan.pdf", function (err, data) {
         res.end(data);
-      });
+      }); 
     } else {
       res.write("<center>404 Not Found</center>");
       res.end();
