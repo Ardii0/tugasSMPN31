@@ -4,10 +4,7 @@ var http = require("http");
 http
   .createServer(function (req, res) {
     res.writeHead(200, { "Content-Type": "text/html" });
-    // res.write(
-    //   "<center><a href=/home><button> Home </button></a> <a href=/about><button> About </button></a> <a href=/profile><button> Profile </button></a></center>"
-    // );
-
+  
     var url = req.url;
 
     if (url === "/") {
